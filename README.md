@@ -1,4 +1,4 @@
-> > [Live Site](http://aushamim-portfolio.netlify.app/)
+> [Live Site](http://aushamim-portfolio.netlify.app/)
 
 ### Overview
 
@@ -6,5 +6,5 @@
 
 ### Changelogs
 
-- 12 Dec, 2021
-- - Uploaded to Github Repo
+- **12 Dec, 2021**
+- Uploaded to Github Repo
