@@ -1,0 +1,29 @@
+.navBar a {
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+}
+.navBarMini a {
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+}
+.navBar a:hover,
+.navBar a:focus,
+.navBarMini a:hover {
+  color: #ffc81d;
+}
+#self:hover,
+#self:focus {
+  color: black;
+}
+.navBar a:nth-child(6) {
+  color: white;
+  background: linear-gradient(to top, #fb9432, #fecd33);
+  border-radius: 25px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 5px;
+  box-shadow: 0px 10px 50px #fca61f;
+}
