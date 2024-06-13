@@ -7,9 +7,12 @@ import React, { useEffect, useState } from "react";
 const Nav = () => {
   const [scrollToTopVisible, setScrollToTopVisible] = useState(false);
   const [navAutoHide, setNavAutoHide] = useState(false);
+  const [posTop, setPosTop] = useState(0);
   useEffect(() => {
     let prevScrollpos = window.scrollY;
     function handleScroll() {
+      setPosTop(window.scrollY);
+
       if (window.scrollY > 10) {
         setScrollToTopVisible(true);
       } else {
@@ -54,7 +57,7 @@ const Nav = () => {
         className={`h-16 sticky left-0 right-0 duration-300 px-5 xl:px-20 bg-white backdrop-blur ${
           navAutoHide ? "-top-16" : "top-0"
         } ${
-          pathname == "/" && window.scrollY < 10
+          pathname == "/" && posTop < 10
             ? "bg-opacity-0 shadow-none"
             : "bg-opacity-90 shadow-sm"
         }`}
