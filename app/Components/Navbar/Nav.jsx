@@ -30,6 +30,8 @@ const Nav = () => {
     };
   }, []);
 
+  console.log(navAutoHide);
+
   const router = useRouter();
   const pathname = usePathname();
   const scrollTo = (id) => {
@@ -48,9 +50,13 @@ const Nav = () => {
   };
   return (
     <>
-      <nav
-        className={`h-16 sticky left-0 right-0 duration-300 px-5 xl:px-20 bg-white bg-opacity-90 backdrop-blur ${
+      <div
+        className={`h-16 sticky left-0 right-0 duration-300 px-5 xl:px-20 bg-white backdrop-blur ${
           navAutoHide ? "-top-16" : "top-0"
+        } ${
+          pathname == "/" && window.scrollY < 10
+            ? "bg-opacity-0 shadow-none"
+            : "bg-opacity-90 shadow-sm"
         }`}
       >
         <div className="h-full flex items-center">
@@ -63,45 +69,6 @@ const Nav = () => {
                 width={48}
               />
             </Link>
-          </div>
-
-          <div className="drawer drawer-end block xl:hidden">
-            <input id="nav-drawer" type="checkbox" className="drawer-toggle" />
-            <div className="drawer-content flex items-center justify-end">
-              {/* Page content here */}
-              <label htmlFor="nav-drawer">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  stroke="currentColor"
-                  className="size-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                  />
-                </svg>
-              </label>
-            </div>
-            <div className="drawer-side">
-              <label
-                htmlFor="nav-drawer"
-                aria-label="close sidebar"
-                className="drawer-overlay"
-              ></label>
-              <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
-                {/* Sidebar content here */}
-                <li>
-                  <a>Sidebar Item 1</a>
-                </li>
-                <li>
-                  <a>Sidebar Item 2</a>
-                </li>
-              </ul>
-            </div>
           </div>
 
           <div className="hidden xl:flex items-center gap-5">
@@ -144,8 +111,80 @@ const Nav = () => {
               Resume
             </Link>
           </div>
+
+          <div className="dropdown dropdown-bottom dropdown-end block xl:hidden">
+            <div tabIndex={0} role="button" className="m-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="size-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </div>
+            <ul
+              tabIndex={0}
+              className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <button
+                  className="font-medium text-gray-500 hover:text-purple-500 duration-300"
+                  onClick={() => {
+                    scrollTo();
+                  }}
+                >
+                  Home
+                </button>
+              </li>
+              <li>
+                <button
+                  className="font-medium text-gray-500 hover:text-purple-500 duration-300"
+                  onClick={() => {
+                    scrollTo("skills");
+                  }}
+                >
+                  Skills
+                </button>
+              </li>
+              <li>
+                <button
+                  className="font-medium text-gray-500 hover:text-purple-500 duration-300"
+                  onClick={() => {
+                    scrollTo("projects");
+                  }}
+                >
+                  Projects
+                </button>
+              </li>
+              <li>
+                <button
+                  className="font-medium text-gray-500 hover:text-purple-500 duration-300"
+                  onClick={() => {
+                    scrollTo("contact");
+                  }}
+                >
+                  Contact
+                </button>
+              </li>
+              <li>
+                <Link
+                  className="font-medium text-gray-500 hover:text-purple-500 duration-300"
+                  href="resume"
+                >
+                  Resume
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
-      </nav>
+      </div>
 
       <div>
         <button
