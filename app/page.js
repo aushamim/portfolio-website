@@ -1,10 +1,11 @@
 import Image from "next/image";
 import HeroButtons from "./Components/Hero/HeroButtons";
+import Skills from "./Components/Skills/Skills";
 
 export default function Home() {
   return (
     <div>
-      <div className="max-h-screen h-screen bg-[#f9f9fc] grid grid-cols-1 xl:grid-cols-2 items-end xl:items-center -mt-16">
+      <div className="max-h-screen h-screen overflow-hidden bg-[#f9f9fc] grid grid-cols-1 xl:grid-cols-2 items-end xl:items-center -mt-16">
         <div className="px-5 xl:px-20 py-10 xl:py-0 text-center xl:text-left">
           <h3 className="text-xl xl:text-4xl mb-3 font-medium">
             Hello, I&apos;m
@@ -47,8 +48,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="skills" className="h-screen bg-green-200">
-        skills
+      <div id="skills" className="">
+        <Skills />
       </div>
 
       <div id="projects" className="h-screen bg-yellow-200">
