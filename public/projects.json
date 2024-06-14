@@ -37,5 +37,18 @@
     },
     "repository": "https://github.com/aushamim/Pet-Adoption-Platform",
     "live_link": "https://clinquant-churros.netlify.app/"
+  },
+  {
+    "title": "Foody's Restaurant",
+    "tools": ["React", "Tailwind"],
+    "details": "",
+    "images": {
+      "main": "/assets/images/projects/foodys-main.png",
+      "ex1": "/assets/images/projects/foodys-ex1.png",
+      "ex2": "/assets/images/projects/foodys-ex2.png",
+      "ex3": "/assets/images/projects/foodys-ex3.png"
+    },
+    "repository": "https://github.com/aushamim/foodys-restaurant",
+    "live_link": "https://foodys-resturant-practice.netlify.app/"
   }
 ]
