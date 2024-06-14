@@ -5,18 +5,18 @@ import React from "react";
 const ProjectCard = ({ sl, project }) => {
   return (
     <div className="w-full xl:w-2/3 xl:h-64 bg-white mx-auto my-10 xl:my-20 rounded-md flex flex-col xl:flex-row items-center justify-center shadow-sm shadow-purple-100 group">
-      <div className="p-5 xl:p-10 pb-0 group-hover:p-0 group-hover:scale-0 group-hover:w-auto xl:group-hover:w-0 group-hover:h-0 xl:group-hover:h-auto overflow-hidden duration-300">
+      <div className="p-5 xl:p-10 pb-0 group-hover:p-2 group-hover:scale-0 group-hover:w-auto xl:group-hover:w-0 group-hover:h-0 xl:group-hover:h-auto overflow-hidden duration-300">
         <h1 className="text-3xl font-semibold text-purple-600 mb-5 xl:mb-8">
           {sl}
         </h1>
       </div>
       <div className="flex-grow p-2 xl:p-5">
-        <div className="flex items-center gap-5">
+        <div className="flex flex-col xl:flex-row items-center gap-5">
           <h1 className="text-4xl font-medium text-center xl:text-left">
             {project?.title}
           </h1>
-          <div className="flex items-center gap-3 scale-0 group-hover:scale-100 duration-300 overflow-hidden">
-            <span className="w-3 h-1 mt-1 mx-auto bg-purple-500 rounded block"></span>
+          <div className="flex items-center gap-3 scale-0 group-hover:scale-100 duration-300 overflow-hidden pb-5 xl:pb-0">
+            <span className="w-3 h-1 mt-1 mx-auto bg-purple-500 rounded hidden xl:block"></span>
             <Link href={project?.repository} target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ const ProjectCard = ({ sl, project }) => {
           {project?.tools?.map((tool) => (
             <span
               key={project?.tools?.indexOf(tool)}
-              className="px-2 border border-purple-500 rounded-md"
+              className="px-2 border border-purple-500 rounded-md text-sm xl:text-base"
             >
               {tool}
             </span>

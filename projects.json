@@ -1,7 +1,7 @@
 [
   {
     "title": "The Mess",
-    "tools": ["React", "Django Rest Framework", "Tailwind", "DaisyUi"],
+    "tools": ["React", "DRF", "Tailwind", "DaisyUi"],
     "details": "",
     "images": {
       "main": "/assets/images/projects/the-mess-main.png",
@@ -14,7 +14,7 @@
   },
   {
     "title": "Oasis Foods",
-    "tools": ["React", "Django Rest Framework", "Tailwind", "DaisyUi"],
+    "tools": ["React", "DRF", "Tailwind", "DaisyUi"],
     "details": "",
     "images": {
       "main": "/assets/images/projects/oasis-foods-main.png",
@@ -27,7 +27,7 @@
   },
   {
     "title": "Happy Tails",
-    "tools": ["React", "Django Rest Framework", "Tailwind", "DaisyUi"],
+    "tools": ["React", "DRF", "Tailwind", "DaisyUi"],
     "details": "",
     "images": {
       "main": "/assets/images/projects/happy-tails-main.png",
