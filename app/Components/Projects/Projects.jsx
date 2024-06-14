@@ -1,7 +1,14 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 
-const Projects = () => {
+const Projects = async () => {
+  const getProjects = async () => {
+    const res = await fetch(
+      `${process.env.NEXT_PUBLIC_BASE_URL}/projects.json`
+    );
+    return res.json();
+  };
+  const projects = await getProjects();
   return (
     <div className="min-h-screen py-20 px-5 xl:p-20">
       <div>
@@ -12,7 +19,13 @@ const Projects = () => {
       </div>
 
       <div className="mt-16">
-        <ProjectCard />
+        {projects?.map((project) => (
+          <ProjectCard
+            key={projects?.indexOf(project)}
+            sl={projects?.indexOf(project) + 1}
+            project={project}
+          />
+        ))}
       </div>
     </div>
   );

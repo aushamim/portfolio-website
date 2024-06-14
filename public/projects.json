@@ -1,0 +1,41 @@
+[
+  {
+    "title": "The Mess",
+    "tools": ["React", "Django Rest Framework", "Tailwind", "DaisyUi"],
+    "details": "",
+    "images": {
+      "main": "/assets/images/projects/the-mess-main.png",
+      "ex1": "/assets/images/projects/the-mess-ex1.png",
+      "ex2": "/assets/images/projects/the-mess-ex2.png",
+      "ex3": "/assets/images/projects/the-mess-ex3.png"
+    },
+    "repository": "https://github.com/aushamim/The-Mess",
+    "live_link": "https://the-mess.netlify.app/"
+  },
+  {
+    "title": "Oasis Foods",
+    "tools": ["React", "Django Rest Framework", "Tailwind", "DaisyUi"],
+    "details": "",
+    "images": {
+      "main": "/assets/images/projects/oasis-foods-main.png",
+      "ex1": "/assets/images/projects/oasis-foods-ex1.png",
+      "ex2": "/assets/images/projects/oasis-foods-ex2.png",
+      "ex3": "/assets/images/projects/oasis-foods-ex3.png"
+    },
+    "repository": "https://github.com/aushamim/OasisFoods",
+    "live_link": "https://oasis-foods.netlify.app/"
+  },
+  {
+    "title": "Happy Tails",
+    "tools": ["React", "Django Rest Framework", "Tailwind", "DaisyUi"],
+    "details": "",
+    "images": {
+      "main": "/assets/images/projects/happy-tails-main.png",
+      "ex1": "/assets/images/projects/happy-tails-ex1.png",
+      "ex2": "/assets/images/projects/happy-tails-ex2.png",
+      "ex3": "/assets/images/projects/happy-tails-ex3.png"
+    },
+    "repository": "https://github.com/aushamim/Pet-Adoption-Platform",
+    "live_link": "https://clinquant-churros.netlify.app/"
+  }
+]
