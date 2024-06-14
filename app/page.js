@@ -2,6 +2,7 @@ import Image from "next/image";
 import HeroButtons from "./Components/Hero/HeroButtons";
 import Skills from "./Components/Skills/Skills";
 import Projects from "./Components/Projects/Projects";
+import Contact from "./Components/Contact/Contact";
 
 export default function Home() {
   return (
@@ -57,8 +58,8 @@ export default function Home() {
         <Projects />
       </div>
 
-      <div id="contact" className="h-screen bg-purple-200">
-        contact
+      <div id="contact">
+        <Contact />
       </div>
     </div>
   );
