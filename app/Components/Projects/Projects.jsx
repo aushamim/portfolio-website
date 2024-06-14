@@ -1,12 +1,15 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import { promises as fs } from "fs";
 
 const Projects = async () => {
-  const getProjects = async () => {
-    const res = await fetch(`./projects.json`);
-    return res.json();
-  };
-  const projects = await getProjects();
+  const file = await fs.readFile(process.cwd() + "/projects.json", "utf8");
+  const projects = JSON.parse(file);
+  // const getProjects = async () => {
+  //   const res = await fetch(`./projects.json`);
+  //   return res.json();
+  // };
+  // const projects = await getProjects();
   return (
     <div className="min-h-screen py-20 px-5 xl:p-20">
       <div>
