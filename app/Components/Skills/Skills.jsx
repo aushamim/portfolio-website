@@ -1,5 +1,3 @@
-import React from "react";
-
 const Skills = () => {
   return (
     <div className="bg-white py-20 px-5 xl:p-20">
@@ -7,7 +5,7 @@ const Skills = () => {
         <h1 className="text-4xl font-semibold text-center">Skills</h1>
         <span className="w-20 h-1 mx-auto bg-purple-500 rounded block"></span>
       </div>
-      <div className="mt-10 flex flex-wrap gap-1 text-white font-semibold text-center">
+      <div className="mt-10 flex flex-wrap gap-1 text-white font-semibold text-center skills">
         <div className="px-5 xl:px-10 py-3 xl:py-10 flex-grow hover:px-10 xl:hover:px-20 duration-300 bg-[#d14b25] bg-opacity-50 hover:bg-opacity-100">
           HTML
         </div>

@@ -35,7 +35,9 @@ const Nav = () => {
     if (!id) {
       window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
-      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+      document
+        .getElementById(id)
+        ?.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   };
   return (
@@ -129,7 +131,7 @@ const Nav = () => {
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
-              <ul className="menu p-4 w-80 min-h-full bg-white bg-opacity-90 backdrop-blur text-base-content z-50">
+              <ul className="menu p-4 w-80 min-h-full bg-white text-base-content z-50">
                 {/* Sidebar content here */}
                 <li>
                   <button

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import HeroButtons from "./Components/Hero/HeroButtons";
 import Skills from "./Components/Skills/Skills";
+import Projects from "./Components/Projects/Projects";
 
 export default function Home() {
   return (
@@ -48,12 +49,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="skills" className="">
+      <div id="skills">
         <Skills />
       </div>
 
-      <div id="projects" className="h-screen bg-yellow-200">
-        projects
+      <div id="projects">
+        <Projects />
       </div>
 
       <div id="contact" className="h-screen bg-purple-200">
