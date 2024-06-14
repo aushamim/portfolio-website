@@ -1,12 +1,9 @@
-"use client";
 import React from "react";
 import ProjectCard from "./ProjectCard";
 
 const Projects = async () => {
   const getProjects = async () => {
-    const res = await fetch(
-      `${process.env.NEXT_PUBLIC_BASE_URL}/projects.json`
-    );
+    const res = await fetch(`./projects.json`);
     return res.json();
   };
   const projects = await getProjects();
