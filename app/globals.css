@@ -32,6 +32,7 @@ body {
 
 * {
   scrollbar-width: thin;
+  scrollbar-color: #d8b4fe transparent;
   box-sizing: border-box;
 }
 
