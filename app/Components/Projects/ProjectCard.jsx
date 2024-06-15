@@ -4,18 +4,21 @@ import React from "react";
 
 const ProjectCard = ({ sl, project }) => {
   return (
-    <div className="w-full xl:w-2/3 xl:h-64 bg-white mx-auto my-10 xl:my-20 rounded-md flex flex-col xl:flex-row items-center justify-center shadow-sm shadow-purple-100 group">
-      <div className="p-5 xl:p-10 pb-0 group-hover:p-2 group-hover:scale-0 group-hover:w-auto xl:group-hover:w-0 group-hover:h-0 xl:group-hover:h-auto overflow-hidden duration-300">
+    <div className="w-full xl:w-4/5 2xl:w-2/3 xl:h-64 bg-white mx-auto my-10 xl:my-20 py-2 xl:py-0 rounded-md flex flex-col xl:flex-row items-center justify-center shadow-sm shadow-purple-100 group">
+      <div className="p-5 xl:p-10 pb-0 group-hover:p-2 group-hover:scale-0 group-hover:w-auto xl:group-hover:w-0 group-hover:h-0 xl:group-hover:h-auto overflow-hidden duration-300 hidden 2xl:block">
         <h1 className="text-3xl font-semibold text-purple-600 mb-5 xl:mb-8">
           {sl}
         </h1>
       </div>
       <div className="flex-grow p-2 xl:p-5">
-        <div className="flex flex-col xl:flex-row items-center gap-5">
+        <div className="flex flex-col 2xl:flex-row items-center xl:items-start 2xl:items-center gap-5">
           <h1 className="text-4xl font-medium text-center xl:text-left">
+            <span className="font-semibold text-purple-600 inline 2xl:hidden">
+              {sl}.{" "}
+            </span>
             {project?.title}
           </h1>
-          <div className="flex items-center gap-3 scale-0 group-hover:scale-100 duration-300 overflow-hidden pb-5 xl:pb-0">
+          <div className="flex items-center gap-3 xl:scale-0 group-hover:scale-100 duration-300 pb-5 xl:pb-0 xl:group-hover:pb-5 2xl:pb-0 xl:h-0 group-hover:h-auto">
             <span className="w-3 h-1 mt-1 mx-auto bg-purple-500 rounded hidden xl:block"></span>
             <Link href={project?.repository} target="_blank">
               <svg
@@ -66,8 +69,8 @@ const ProjectCard = ({ sl, project }) => {
           ))}
         </div>
       </div>
-      <div className="relative group/card h-60 aspect-video">
-        <div className="absolute top-1/2 -translate-y-1/2 xl:translate-y-0 xl:top-0 left-1/2 -translate-x-1/2 xl:-left-2 xl:translate-x-0 group-hover/card:rotate-[6deg] h-44 xl:h-56 group-hover/card:h-48 xl:group-hover/card:h-60 aspect-video group-hover/card:border rounded-md group-hover:scale-[1.15] xl:group-hover:scale-150 duration-300 bg-white group-hover:shadow-sm group-hover:shadow-purple-200 z-[1] overflow-hidden">
+      <div className="relative group/card w-full h-auto xl:w-auto xl:h-60 aspect-video">
+        <div className="absolute top-1/2 -translate-y-1/2 xl:translate-y-0 xl:top-0 left-1/2 -translate-x-1/2 xl:-left-2 xl:translate-x-0 group-hover/card:rotate-[6deg] h-auto w-[50vw] xl:w-[95%] group-hover/card:w-[80vw] xl:group-hover/card:w-full aspect-video group-hover/card:border rounded-md group-hover:scale-[1.15] xl:group-hover:scale-150 duration-300 bg-white group-hover:shadow-sm group-hover:shadow-purple-200 z-[1] overflow-hidden">
           <Image
             src={project?.images?.ex3}
             alt="Project Image"
@@ -77,7 +80,7 @@ const ProjectCard = ({ sl, project }) => {
             sizes="100w"
           />
         </div>
-        <div className="absolute top-1/2 -translate-y-1/2 xl:translate-y-0 xl:top-0 left-1/2 -translate-x-1/2 xl:-left-2 xl:translate-x-0 group-hover/card:rotate-[4deg] h-44 xl:h-56 group-hover/card:h-48 xl:group-hover/card:h-60 aspect-video group-hover/card:border rounded-md group-hover:scale-[1.15] xl:group-hover:scale-150 duration-300 bg-white group-hover:shadow-sm group-hover:shadow-purple-200 z-[2] overflow-hidden">
+        <div className="absolute top-1/2 -translate-y-1/2 xl:translate-y-0 xl:top-0 left-1/2 -translate-x-1/2 xl:-left-2 xl:translate-x-0 group-hover/card:rotate-[4deg] h-auto w-[50vw] xl:w-[95%] group-hover/card:w-[80vw] xl:group-hover/card:w-full aspect-video group-hover/card:border rounded-md group-hover:scale-[1.15] xl:group-hover:scale-150 duration-300 bg-white group-hover:shadow-sm group-hover:shadow-purple-200 z-[2] overflow-hidden">
           <Image
             src={project?.images?.ex2}
             alt="Project Image"
@@ -87,7 +90,7 @@ const ProjectCard = ({ sl, project }) => {
             sizes="100w"
           />
         </div>
-        <div className="absolute top-1/2 -translate-y-1/2 xl:translate-y-0 xl:top-0 left-1/2 -translate-x-1/2 xl:-left-2 xl:translate-x-0 group-hover/card:rotate-2 h-44 xl:h-56 group-hover/card:h-48 xl:group-hover/card:h-60 aspect-video group-hover/card:border rounded-md group-hover:scale-[1.15] xl:group-hover:scale-150 duration-300 bg-white group-hover:shadow-sm group-hover:shadow-purple-200 z-[3] overflow-hidden">
+        <div className="absolute top-1/2 -translate-y-1/2 xl:translate-y-0 xl:top-0 left-1/2 -translate-x-1/2 xl:-left-2 xl:translate-x-0 group-hover/card:rotate-2 h-auto w-[50vw] xl:w-[95%] group-hover/card:w-[80vw] xl:group-hover/card:w-full aspect-video group-hover/card:border rounded-md group-hover:scale-[1.15] xl:group-hover:scale-150 duration-300 bg-white group-hover:shadow-sm group-hover:shadow-purple-200 z-[3] overflow-hidden">
           <Image
             src={project?.images?.ex1}
             alt="Project Image"
@@ -97,7 +100,7 @@ const ProjectCard = ({ sl, project }) => {
             sizes="100w"
           />
         </div>
-        <div className="absolute top-1/2 -translate-y-1/2 xl:translate-y-0 xl:top-0 left-1/2 -translate-x-1/2 xl:-left-2 xl:translate-x-0 h-48 xl:h-60 aspect-video border rounded-md group-hover:scale-[1.15] xl:group-hover:scale-150 duration-300 bg-white group-hover:shadow-sm group-hover:shadow-purple-200 z-[4] overflow-y-scroll hide-scrollbar cursor-ns-resize">
+        <div className="absolute top-1/2 -translate-y-1/2 xl:translate-y-0 xl:top-0 left-1/2 -translate-x-1/2 xl:-left-2 xl:translate-x-0 h-auto w-[80vw] xl:w-full aspect-video border rounded-md group-hover:scale-[1.15] xl:group-hover:scale-150 duration-300 bg-white group-hover:shadow-sm group-hover:shadow-purple-200 z-[4] overflow-y-scroll hide-scrollbar cursor-ns-resize">
           <Image
             src={project?.images?.main}
             alt="Project Image"
