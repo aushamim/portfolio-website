@@ -62,7 +62,7 @@ const Contact = () => {
               id="name"
               type="text"
               placeholder="Type your name here"
-              className="input input-bordered w-full rounded-md border-purple-200 shadow-2xl shadow-purple-200 focus:outline-0 focus:shadow-2xl focus:shadow-purple-200 focus:border-purple-400 duration-300"
+              className="input input-bordered w-full rounded-md border-purple-200 focus:outline-0 focus:shadow-2xl focus:shadow-purple-200 focus:border-purple-400 duration-300"
               required
             />
           </label>
@@ -74,7 +74,7 @@ const Contact = () => {
               id="email"
               type="email"
               placeholder="Type your email here"
-              className="input input-bordered w-full rounded-md border-purple-200 shadow-2xl shadow-purple-200 focus:outline-0 focus:shadow-2xl focus:shadow-purple-200 focus:border-purple-400 duration-300"
+              className="input input-bordered w-full rounded-md border-purple-200 focus:outline-0 focus:shadow-2xl focus:shadow-purple-200 focus:border-purple-400 duration-300"
               required
             />
           </label>
@@ -84,7 +84,7 @@ const Contact = () => {
             </div>
             <textarea
               id="message"
-              className="textarea textarea-bordered py-3 text-base rounded-md border-purple-200 shadow-2xl shadow-purple-200 focus:outline-0 focus:shadow-2xl focus:shadow-purple-200 focus:border-purple-400 duration-300"
+              className="textarea textarea-bordered py-3 text-base rounded-md border-purple-200 focus:outline-0 focus:shadow-2xl focus:shadow-purple-100 focus:border-purple-400 duration-300"
               placeholder="Type your message here"
               rows={11}
               required
