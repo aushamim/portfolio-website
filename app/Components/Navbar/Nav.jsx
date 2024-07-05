@@ -98,7 +98,7 @@ const Nav = () => {
             </button>
             <a
               className="font-medium text-gray-500 hover:text-purple-500 duration-300"
-              href="https://drive.google.com/uc?export=download&id=1WeY-amg4wy5TNnBEZaamjDSDSchCNO0P"
+              href="https://drive.google.com/uc?export=download&id=1WD28888Lo0uglQw_qo_NXNgK7BfkE6Zs"
             >
               Resume
             </a>
@@ -176,7 +176,7 @@ const Nav = () => {
                 <li>
                   <a
                     className="font-medium hover:text-purple-500 duration-300"
-                    href="https://drive.google.com/uc?export=download&id=1WeY-amg4wy5TNnBEZaamjDSDSchCNO0P"
+                    href="https://drive.google.com/uc?export=download&id=1WD28888Lo0uglQw_qo_NXNgK7BfkE6Zs"
                   >
                     Resume
                   </a>

@@ -15,7 +15,7 @@ const HeroButtons = () => {
         Contact Me
       </button>
       <a
-        href="https://drive.google.com/uc?export=download&id=1WeY-amg4wy5TNnBEZaamjDSDSchCNO0P"
+        href="https://drive.google.com/uc?export=download&id=1WD28888Lo0uglQw_qo_NXNgK7BfkE6Zs"
         className="btn-purple"
       >
         Download Resume
