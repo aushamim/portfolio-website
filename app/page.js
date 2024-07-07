@@ -4,6 +4,8 @@ import Skills from "./Components/Skills/Skills";
 import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
 import ImageBG from "./Components/Hero/ImageBG";
+import AboutMe from "./Components/AboutMe/AboutMe";
+import PersonalInformation from "./Components/AboutMe/PersonalInformation";
 
 export default function Home() {
   return (
@@ -24,17 +26,22 @@ export default function Home() {
         <div className="relative h-full">
           <ImageBG />
 
-          <div className="relative h-full flex justify-center items-end">
+          <div className="relative h-full flex justify-center items-center">
             <Image
-              src="/assets/images/shamim_transparent.png"
+              src="/assets/images/hero_section_image.png"
               alt="Shamim Image"
-              className="h-auto xl:h-screen w-3/4 xl:w-auto"
+              className="h-auto xl:h-3/4 w-3/4 xl:w-auto"
               width={0}
               height={0}
               sizes="100w"
             />
           </div>
         </div>
+      </div>
+
+      <div id="about-me">
+        <AboutMe />
+        <PersonalInformation />
       </div>
 
       <div id="skills">

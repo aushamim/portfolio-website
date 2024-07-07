@@ -24,7 +24,7 @@ const Nav = () => {
   }, []);
   const router = useRouter();
   const pathname = usePathname();
-  const scrollTo = (id) => {
+  const scrollTo = (id, block = "start") => {
     if (pathname != "/") {
       if (!id) {
         router.push("/");
@@ -37,7 +37,7 @@ const Nav = () => {
     } else {
       document
         .getElementById(id)
-        ?.scrollIntoView({ behavior: "smooth", block: "center" });
+        ?.scrollIntoView({ behavior: "smooth", block: block });
     }
   };
   return (
@@ -75,7 +75,15 @@ const Nav = () => {
             <button
               className="font-medium text-gray-500 hover:text-purple-500 duration-300"
               onClick={() => {
-                scrollTo("skills");
+                scrollTo("about-me", "center");
+              }}
+            >
+              About Me
+            </button>
+            <button
+              className="font-medium text-gray-500 hover:text-purple-500 duration-300"
+              onClick={() => {
+                scrollTo("skills", "center");
               }}
             >
               Skills
